@@ -62,7 +62,7 @@ public class UIStepDefinitions {
             homePage.name.sendKeys(csvCell[0]);
             homePage.email.sendKeys(csvCell[1]);
             homePage.currentAddress.sendKeys(csvCell[2]);
-            logger.info("information sent to the boxes");
+            logger.info("information sent to the boxes from cvs file");
         }
     }
     @Then("user enter other fields")
@@ -71,6 +71,7 @@ public class UIStepDefinitions {
         Driver.clickWithJS(homePage.gender);
         homePage.mobileNumber.sendKeys("05070212465");
         Driver.clickWithJS(homePage.submit);
+        logger.info("Entered other boxes information and also selected optional box");
         Thread.sleep(5000);
         ReusableMethods.getScreenshot("screen");
         logger.info( "Took a screenshot");
