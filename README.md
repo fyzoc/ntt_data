@@ -20,3 +20,8 @@ It was added the required dependency to the xml file to make.
 Utilized from Log4j library to track each and every step which supposed to be logged.
 When the test is executed, the Logs package and a log.txt file are created. And the logs are attended to this file.
 
+# Test Report
+When the test is finished,it gives a cucumber-report.It was created under target package under xml-report.
+
+
+
