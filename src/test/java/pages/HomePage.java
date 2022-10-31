@@ -29,4 +29,6 @@ public class HomePage {
     public WebElement currentAddress;
     @FindBy( xpath ="//button[@id='submit']" )
     public WebElement submit;
+    @FindBy( id ="closeLargeModal" )
+    public WebElement closeButton;
 }

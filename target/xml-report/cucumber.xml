@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="20.182">
+    <testcase classname="ToolsQA page" name="Test ToolsQA page" time="19.991">
+        <system-out>
+            <![CDATA[Given user is on ToolsQA home page..........................................passed
+When user verifies the title of the home page...............................passed
+And user click on the Form..................................................passed
+And user click on the Practice Form.........................................passed
+And user send Name, Email, Current Address via csv..........................passed
+Then user enter other fields................................................passed
+Then close browser..........................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

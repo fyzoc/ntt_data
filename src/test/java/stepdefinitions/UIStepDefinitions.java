@@ -66,13 +66,15 @@ public class UIStepDefinitions {
         }
     }
     @Then("user enter other fields")
-    public void userEnterOtherFields() throws IOException {
+    public void userEnterOtherFields() throws IOException, InterruptedException {
         homePage.lastName.sendKeys("Ocakdan");
         Driver.clickWithJS(homePage.gender);
         homePage.mobileNumber.sendKeys("05070212465");
         Driver.clickWithJS(homePage.submit);
+        Thread.sleep(5000);
         ReusableMethods.getScreenshot("screen");
         logger.info( "Took a screenshot");
+        Driver.clickWithJS(homePage.closeButton);
     }
     @Then("close browser")
     public void closeBrowser() {
