@@ -1,15 +1,22 @@
-# ntt_data
-NTT_Data Test Automation 
+# NTT_Data Test Automation 
 
-Testing "ToolsQA (demoqa.com)" page .
-It was built using selenium-cucumber framework to my test.
-Using maven and page object model on my project.
-My project has a runner class you can execute my uı test in there.
-Also the framework has a method which name is "getScreenshot" which in utilities package in ReusableMethods class.
+"ToolsQA (demoqa.com)" page test automation.
+It was built using selenium-cucumber framework.
+
+
+# How To Run 
+Inside the runner class you can mention the specific test case from the Feature file.
+for instance: "@Test01" annotation is inside the Feature file. So if you want to execute this test case you need to change tags = "@Test01" in Runner class.
+
+# How To Get ScreenShot
+The framework has a method which name is "getScreenshot" which in utilities package in ReusableMethods class.
 This method is used for taking specific screenshot.
 
+# How to Read csv file
 Also the project could read information from any csv file, where we create at 'testdata' package under resources.
 It was added the required dependency to the xml file to make.
-Finally in the project it was used log library to getting same log from test steps.
-When the test is run, the Logs package and a txt file are created. And the steps of the test are logged.
+
+# Log4J Library
+Utilized from Log4j library to track each and every step which supposed to be logged.
+When the test is executed, the Logs package and a log.txt file are created. And the logs are attended to this file.
 
