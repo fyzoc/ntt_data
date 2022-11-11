@@ -80,6 +80,6 @@ public class UIStepDefinitions {
     @Then("close browser")
     public void closeBrowser() {
         Driver.closeDriver();
-        logger.info("Test finished");
+        logger.info("Test finished my test");
     }
 }
